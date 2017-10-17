@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-
+import { MessagesComponent } from './messages/messages.component';
+import { Component,ViewChild } from '@angular/core';
+import { NewMessageComponent } from "./new-message/new-message.component";
+import { NavbarComponent } from "./navbar.component";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
 }

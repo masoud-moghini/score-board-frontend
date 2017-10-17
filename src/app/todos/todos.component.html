@@ -1,0 +1,12 @@
+<div>
+    <h2>The following todos have been recieved :</h2>
+    <div *ngFor="let todo of this.webService.todos|async" class="card">
+    <md-card style="margin:8px ;cursor:pointer">
+      
+      <md-card-content >
+       {{todo.text}}
+      </md-card-content>
+    </md-card>
+    </div> 
+  
+  </div>

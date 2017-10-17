@@ -1,0 +1,13 @@
+<p>
+  <md-card class="card"  *ngIf="this.auth.isAuthenticated">
+    <md-card-content>
+
+      <md-input-container>
+        <textarea mdInput placeholder="comment" [(ngModel)]="message.Text"></textarea>
+      </md-input-container>
+      <md-card-actions>
+        <button  (click)="onPost()" md-button color="primary">POST</button>
+      </md-card-actions>
+    </md-card-content>
+  </md-card>
+</p>
